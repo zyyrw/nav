@@ -33,5 +33,7 @@ fun NavController.handleComposeNavigationIntent(intent: NavIntent) {
         is NavIntent.OffAllTo -> navigate(intent.route) {
             popUpTo(0)
         }
+
+        else -> {}
     }
 }
